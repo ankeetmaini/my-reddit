@@ -1,0 +1,16 @@
+<table class="table table-condensed">
+	<thead>
+		<tr>
+			<td>Reddits under <span>{{this.model.sub}}</span></td>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each }}
+		<tr>
+			<td>{{this}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
+{{this.model}}
+{{outlet}}
