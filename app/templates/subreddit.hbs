@@ -1,16 +1,15 @@
 <table class="table table-condensed">
 	<thead>
 		<tr>
-			<td>Reddits under <span>{{this.model.sub}}</span></td>
+			<td>Reddits under <span>{{this.sub}}</span></td>
 		</tr>
 	</thead>
 	<tbody>
-		{{#each }}
+		{{#each reddits}}
 		<tr>
-			<td>{{this}}</td>
+			<td>{{title}}</td>
 		</tr>
 		{{/each}}
 	</tbody>
 </table>
-{{this.model}}
 {{outlet}}
